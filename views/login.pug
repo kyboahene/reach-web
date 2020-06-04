@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .form-container
+        form.login-form
+            .input-group.mb-3
+                .input-group-prepend
+                    span.input-group-text Name
+                input.form-control
+            .input-group.mb-3
+                .input-group-prepend
+                    span.input-group-text Password
+                input.form-control(type='password')
+            
+            button.btn.btn-primary(type='submit') Login
+
+        div.form-image
+           | An image goes here 

@@ -1,0 +1,91 @@
+.bg-reach {background-color: #ff6f00;}
+.bg-n {background-color: #fafafa;}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.catchy-top {
+  display: flex;
+  order: 2;
+  height: 80vh;
+}
+
+.catchy-top-left {
+  box-sizing: border-box;
+  padding: 80px;
+}
+
+.catchy-top > div {
+  width: 50%;
+}
+
+/* Login Page */
+.form-container {
+  margin: auto;
+  margin-top: 60px;
+  width: 80%;
+  height: 400px;
+  display: flex;
+  order: 2;
+  
+}
+
+.input-group {
+  width: 50% !important;
+  margin: auto;
+}
+
+.form-image {
+  /* background-image: url('/images/1.png'); */
+  background-color: #ff6f00;
+  background-size: 100% 100%;
+}
+
+.form-container > form, .form-container > div {
+  width: 50%;;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  background-color: #f1f1f1;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .catchy-top {
+    display: block;
+  }
+
+  .catchy-top > div {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops) */
+/* No media query since the extra-large breakpoint has no upper bound on its width */

@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://fonts.googleapis.com/css2?family=Oxygen&display=swap', rel='stylesheet')
+
+    //Custom CSS
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+  body
+    //Navigation bar
+    nav.navbar.navbar-expand-lg.navbar-light.bg-n.shadow-sm
+      a.navbar-brand(href="#") Reach
+
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#linksContainer")
+
+      .collapse.navbar-collapse(id="linksContainer")
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="#") Home
+    
+    block content
+
+  footer
+    p Reach 2020
