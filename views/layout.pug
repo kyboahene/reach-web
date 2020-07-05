@@ -4,25 +4,75 @@ html
     title= title
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    link(href='https://fonts.googleapis.com/css2?family=Oxygen&display=swap', rel='stylesheet')
+    link(rel="icon", href="/images/BulkReach_Logo.png", type="image/png" sizes='30x30')
 
     //Custom CSS
     link(rel='stylesheet', href='/stylesheets/style.css')
     //Bootstrap CSS
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   body
     //Navigation bar
-    nav.navbar.navbar-expand-lg.navbar-light.bg-n.shadow-sm
-      a.navbar-brand(href="#") Reach
+    nav.mb-3.navbar.navbar-expand-lg.navbar-dark.lighten-1.shadow-sm.p-0.font-weight-bold(style='font-family: NevaLight; background: #2f2e41;')
+      .container.p-0  
+        a.navbar-brand(href="/") 
+          img.img-fluid(src='/images/BulkReach_Logo.png', alt='Logo' style="width: 70px; height: auto")      
 
-      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#linksContainer")
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#linksContainer")
+          span.navbar-toggler-icon
 
-      .collapse.navbar-collapse(id="linksContainer")
-        ul.navbar-nav.ml-auto
-          li.nav-item
-            a.nav-link(href="#") Home
+        .collapse.navbar-collapse(id="linksContainer")
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="#") Features
+            li.nav-item
+              a.nav-link.mx-2(href="#") Pricing
+            li.nav-item
+              a.nav-link.mr-2(href="#") API
+            li.nav-item
+              a.nav-link(href="/login"): button.navBtn Login
     
     block content
 
-  footer
-    p Reach 2020
+  footer.font-small.mb-0.p-3.mt-5.text-white
+    .container-fluid.text-center.text-md-left.mb-0
+      .row
+        .col-lg-2.col-md-2.mx-auto
+          img.img-fluid(src='/images/BulkReach_Logo1.png', alt='Logo', style="width: 120px; height: auto;")
+
+        .col-lg-2.col-md-2.mx-auto
+          h5.font-weight-bold.text-muted
+            | Services 
+          ul.list-unstyled
+            li 
+              a( href='/') Premium SMS
+            li
+              a(href='/') Connect to API
+
+        .col-lg-2.col-md-2.mx-auto
+          h5.font-weight-bold.text-muted
+            | Legal 
+          ul.list-unstyled
+            li 
+              a( href='/') Terms of Service
+            li
+              a(href='/') Privacy Policy
+        
+        .col-lg-2.col-md-2.mx-auto
+          h5.font-weight-bold.text-muted
+            | Company 
+          ul.list-unstyled
+            li 
+              a( href='/') About
+            li
+              a(href='/') Contact Us
+            li
+              a(href='/') Careers
+          p
+            a(href='/'): i.fa.fa-facebook-f
+            a.mx-2(href='/'): i.fa.fa-twitter
+            a(href='/'): i.fa.fa-google
+          
+    p.text-center.pb-0
+      | Copyright &copy; Reach 
+      
