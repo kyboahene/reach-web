@@ -1,23 +1,48 @@
-.bg-reach {background-color: #ff6f00;}
-.bg-n {background-color: #fafafa;}
+@font-face {
+  font-family: "NexaBold";
+  src: url(Fonts/NexaBold.otf) format("otf");
+}
 
+@font-face {
+  font-family: "NexaLight";
+  src: url(Fonts/NexaLight.otf);
+}
 
 html {
   height: 100%;
 }
 
 body {
-  font-family: 'Oxygen', sans-serif;
+  /* background-image: url(../images/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: space; */
+  max-width: 100%;
   min-height: 100%;
   position: relative;
-  padding-bottom: 100px;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: NexaLight;
+}
+p {
+  font-family: NexaLight;
+}
+
+a:hover {
+  color: red;
 }
 
 .catchy-top {
   display: flex;
   order: 2;
-  height: 80vh;
+  height: 50vh;
 }
 
 .catchy-top-left {
@@ -29,6 +54,77 @@ body {
   width: 50%;
 }
 
+h2.text-center {
+  color: #ff6f00;
+}
+/*Navbar */
+li.nav-item a.nav-link {
+  color: #ff6f00 !important;
+}
+
+/*Buttons*/
+button {
+  font-family: NexaLight !important;
+}
+
+input.myBtn {
+  background-color: #ff6f00;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.indexBtn {
+  background-color: #ff6f00;
+  color: #2f2e41;
+  padding: 8px;
+  width: 120px;
+  border-radius: 5px;
+  border: #ff6f00;
+}
+
+button.navBtn {
+  background-color: #ff6f00;
+  color: #2f2e41;
+  border: 1px #ff6f00 solid;
+  border-radius: 4px;
+}
+
+button.PASYGBtn {
+  background-color: #ff6f00;
+  color: #2f2e41;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: #ff6f00;
+  padding: 10px;
+  font-weight: bold;
+}
+/*Buttons*/
+
+/*Table*/
+table {
+  font-family: NexaLight;
+  border: 1px #fff;
+}
+
+thead {
+  background: #ff6f00;
+  color: #2f2341;
+}
+
+tbody {
+  background: #2f2e41cc;
+  color: #fff;
+}
+/*Table*/
+
+/*Form */
+input::placeholder {
+  text-align: center;
+  color: red;
+  font-family: NexaLight;
+}
+/*Form*/
+
 /* Login Page */
 .form-container {
   margin: auto;
@@ -37,7 +133,34 @@ body {
   height: 400px;
   display: flex;
   order: 2;
-  
+}
+
+.blackContainer p {
+  color: #ffffffb3;
+}
+
+.form-image {
+  position: absolute;
+}
+
+footer {
+  bottom: 0;
+  background: #2f2341;
+  font-family: NexaLight;
+  display: block;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #615e66;
+}
+
+footer i {
+  color: #fafafa;
 }
 
 .input-group {
@@ -45,29 +168,13 @@ body {
   margin: auto;
 }
 
-.form-image {
-  /* background-image: url('/images/1.png'); */
-  background-color: #ff6f00;
-  background-size: 100% 100%;
-}
-
-.form-container > form, .form-container > div {
-  width: 50%;;
-}
-
-
-footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  height: 80px;
-  background-color: #f1f1f1;
+.form-container > form,
+.form-container > div {
+  width: 50%;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -76,16 +183,33 @@ footer {
     display: block;
   }
 
+  .form-image {
+    position: relative;
+    display: none;
+  }
+
   .catchy-top > div {
     width: 100%;
+  }
+
+  .col-lg-4.pt-5 {
+    padding-left: 8rem;
+  }
+  .indexBtn {
+    text-align: center;
   }
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  div.col-md-6 img {
+    padding-top: 3rem;
+  }
+}
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+}
 
 /* Extra large devices (large desktops) */
 /* No media query since the extra-large breakpoint has no upper bound on its width */
