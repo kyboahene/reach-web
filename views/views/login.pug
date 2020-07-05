@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    div.container.mt-5
+        div.row
+            div.col-lg-6.mt-5
+                h2.text-center
+                    | Welcome
+                form(class='my-form mt-5', method='POST', action='')
+                    input(type='text' class='form-control py-4' id='username' name='username' placeholder='Username', style='border-radius: 30px' required)
+                    input(type='password' class='form-control py-4 mt-5' id='password' name='password' placeholder='Password', style='border-radius: 30px' required)
+                    p.px-3
+                      input(type='checkbox' class='mt-4' id='rememberMe' name='rememberMe')
+                      |   Remember Me
+
+                      a(href='#', class='float-right mt-3 text-dark') Forgot your password?
+
+                    input(type='submit' class='form-control myBtn mt-4' id='submit' name='submit' value=' Login', required)
+                    p.text-center.mt-3
+                      | Already have an account?
+                      a(href='#', class='mt-3 text-dark')  Register
+
+
+
+
+            div.form-image.col-lg-6.mt-5
+                img.img-fluid(src='/images/form_image.png', alt='Top Image' width = '100%')
